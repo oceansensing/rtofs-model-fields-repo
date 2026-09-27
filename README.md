@@ -30,15 +30,15 @@ them when they fall behind, which is how their health stays visible.
 ## Where the data comes from
 
 **Source**: NOAA's open-data bucket on AWS, registry entry
-<https://registry.opendata.aws/noaa-rtofs/>. The study of its layout, grid
-and latency is this repository's first PLAN entry, written when the fetcher
-is.
+<https://registry.opendata.aws/noaa-rtofs/>. The fetcher is the site's
+`scripts/fetch-rtofs.py`; its budget is in `pipeline/products.toml` and its
+traps in `CLAUDE.md`.
 
-## How it will run
+## How it runs
 
 The orchestrator (the site's private `pipeline/`), the fetchers and the
 published-file contract all come from `oceansensing.github.io`, checked out at
-run time. This repository will carry `pipeline/products.toml` and its publish
+run time. This repository carries `pipeline/products.toml` and its publish
 workflow, and nothing else executable. Each run publishes to GitHub Pages and
 to Cloudflare R2 from one build. Sibling repositories of the same model:
 `rtofs-model-currents-repo`.
@@ -54,4 +54,6 @@ README.md       what this is
 CLAUDE.md       what must not be got wrong, and the shared doc doctrine
 PLAN.md         the founding plan and running record
 DECISIONS.md    dated one-way decisions, D1 onward
+pipeline/       products.toml, the declaration the orchestrator reads
+.github/        the publish workflow
 ```
