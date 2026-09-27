@@ -28,3 +28,12 @@ The fetcher is the site's `scripts/fetch-rtofs.py`; "What must not be got wrong"
 CLAUDE has its traps, each found on the first live run. Rehearsed through
 the orchestrator in a throwaway copy of the site with the roots in its
 contract: every file matched and every fate was `fresh`.
+
+## 2026-09-27 — live
+
+The site's commit `f872402` put the roots in the contract and the origin in
+`MAP_ORIGINS`; the dispatched run 36297612223 went green on its first try (build,
+Pages and R2), and `status/status.json` read at 2026-09-27T05:36:22Z: every
+product `fresh` (5 of 5), the nearest frame 0.39 h
+from the reader. The schedule `51 1,7,13,19 * * *` was then turned on (longest gap
+6 h, so the watchdog's silence budget is 10 h).
