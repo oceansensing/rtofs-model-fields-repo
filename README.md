@@ -3,14 +3,25 @@
 The RTOFS **fields** — a data repository of the oceansensing ocean map system: its own
 Pages site, its own schedule, its own gigabyte, holding no code of its own.
 
-**Nothing is published yet** (2026-09-27). `PLAN.md` is the founding plan;
+**Built, rehearsed and taken live 2026-09-27** — published to Pages and R2,
+not drawn on the website's map. `PLAN.md` is the founding plan;
 `CLAUDE.md` carries what must not be got wrong and the shared doc doctrine.
 
-## What it will publish
+## What it publishes
 
 NOAA's Global Real-Time Ocean Forecast System's **scalar** fields — sea
 surface temperature, salinity and height, and sea ice where the model carries
 it.
+
+| root | quantity | grid |
+| --- | --- | --- |
+| `ssh-rtofs.json` | sea surface height | global, 0.25 degree |
+| `sic-rtofs.json` | sea ice concentration | global, 0.25 degree |
+| `sit-rtofs.json` | sea ice thickness | global, 0.25 degree |
+| `sst-rtofs-useast.json` | surface temperature | US East, 0.08 degree, `regional: true` |
+| `sss-rtofs-useast.json` | surface salinity | US East, 0.08 degree, `regional: true` |
+
+23 MB a tree (measured 2026-09-27).
 
 These products are published **operationally but not drawn on the website's
 map** — the owner's call, 2026-09-27. The map's status line still reports

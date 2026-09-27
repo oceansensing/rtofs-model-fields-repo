@@ -1,0 +1,68 @@
+# What this repository publishes: sea surface height and ice (global), surface temperature and salinity (US East), from NOAA's Global RTOFS in the
+# open-data bucket `noaa-nws-rtofs-pds` — published, not drawn on the
+# website's map (the owner, 2026-09-27). The fetcher is the site's
+# `scripts/fetch-rtofs.py`, shared with `rtofs-model-currents-repo` and scoped here with `--only=`.
+#
+# **Option A** of the 2026-09-27 survey: the global surface files carry sea
+# surface height and the ice, and not temperature, salinity or currents,
+# which come here from the regional US East subset (0 to 80 N, 105 to 41 W).
+# Global roots are 0.25 degree from 0 E; US East roots 0.08 degree with
+# `regional: true`. Sizes measured 2026-09-27, 4-7 MB a root.
+#
+# **The budget.** One 00Z cycle a day; its forecast hours f000-f071 land
+# about 13:00 UTC. Each run publishes the frame nearest now — hourly for the
+# global roots, six-hourly for US East — on a schedule every six hours: at
+# most three hours off when published, plus six to the next run and
+# GitHub's lateness. 12 hours; re-measure after a week.
+
+[contract]
+check = ["node", "scripts/test-schema.mjs"]
+roots = ["node", "scripts/test-schema.mjs", "--roots"]
+
+[defaults]
+timeout_minutes = 20
+
+# Named after the server.
+[steps.rtofs]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=ssh-rtofs,sic-rtofs,sit-rtofs,sst-rtofs-useast,sss-rtofs-useast"]
+lane = "noaa-rtofs-bucket"
+
+[products.ssh-rtofs]
+title = "RTOFS sea surface height"
+step = "rtofs"
+roots = ["ssh-rtofs.json"]
+writes = ["ssh-rtofs.json"]
+max_age_hours = 12
+namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=ssh-rtofs"]
+
+[products.sic-rtofs]
+title = "RTOFS sea ice concentration"
+step = "rtofs"
+roots = ["sic-rtofs.json"]
+writes = ["sic-rtofs.json"]
+max_age_hours = 12
+namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sic-rtofs"]
+
+[products.sit-rtofs]
+title = "RTOFS sea ice thickness"
+step = "rtofs"
+roots = ["sit-rtofs.json"]
+writes = ["sit-rtofs.json"]
+max_age_hours = 12
+namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sit-rtofs"]
+
+[products.sst-rtofs-useast]
+title = "RTOFS US East surface temperature"
+step = "rtofs"
+roots = ["sst-rtofs-useast.json"]
+writes = ["sst-rtofs-useast.json"]
+max_age_hours = 12
+namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sst-rtofs-useast"]
+
+[products.sss-rtofs-useast]
+title = "RTOFS US East surface salinity"
+step = "rtofs"
+roots = ["sss-rtofs-useast.json"]
+writes = ["sss-rtofs-useast.json"]
+max_age_hours = 12
+namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sss-rtofs-useast"]

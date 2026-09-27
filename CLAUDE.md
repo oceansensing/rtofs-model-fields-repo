@@ -118,10 +118,26 @@ fact from a guess that aged.
 
 - **`PLAN.md`** — the founding plan and running record.
 - **`DECISIONS.md`** — dated one-way decisions, D1 onward.
-- **`pipeline/products.toml`** — not written yet.
+- **`pipeline/products.toml`** — the products, the step and the budget.
+- **`.github/workflows/publish.yml`** — the publish workflow.
 
 ## What must not be got wrong here
 
+- **Surface temperature, salinity and currents are NOT in the global NetCDF
+  files**, only in a 437 MB HYCOM binary per step; the US East subset is
+  where they come from (option A, 2026-09-27). Global coverage for them is
+  option B, the owner's call.
+- **The files are compressed HDF5**: read with `h5py` through HTTP Range
+  requests (`RangeFile` in the fetcher), so only the needed chunks cross
+  the network — about 36 MB a global field.
+- **The ice is the global regrid's control**, and ice alone is not enough:
+  in September the Antarctic pack is near its maximum, so a grid flipped
+  north-south still shows ice at the top. The check also requires the
+  lattice north of 82 N to be mostly WATER (86.5% measured against 12.4%
+  south of 75 S).
+- **Longitudes run 74 to 434 E**: the global lattice wraps them
+  (`regrid.bin_index(..., wrap=True)`); without it the column just short
+  of 360 E is dropped.
 - **Every reader in this project assumes a regular latitude/longitude
   lattice.** If the model's grid is not one, the regrid is the product, and
   it gets a positive control before its output is believed.

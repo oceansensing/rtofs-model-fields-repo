@@ -25,3 +25,7 @@ One-way in the ordinary data-repository sense: moving a product between
 repositories is cheap in machinery and expensive in everything that points at
 it — roots in the contract, origins in the site's config, and the union
 `check:docs` holds across origins.
+
+## D2 — 2026-09-27 — Option A: global height and ice, US East temperature, salinity and currents
+
+The global NetCDF files carry no surface temperature, salinity or currents; the US East regional subset does. Option B — those fields globally, from the 437 MB HYCOM binary per step — is the owner's to choose. Published, not drawn.
