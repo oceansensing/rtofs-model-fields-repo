@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "sit-rtofs",
+ "title": "RTOFS sea ice thickness",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-03T14:48:01Z",
+ "updated": "2026-10-03T14:48:01Z",
+ "hour": "2026-10-03T15:00:00Z",
+ "modelRun": "2026-10-03T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-10-03T15:00:00Z"
+ ],
+ "files": {
+  "sit-rtofs.json": {
+   "bytes": 4882602,
+   "sha256": "df434a39156e1dc837cd8d97f8d2504394f5d56763960efd1a2261ffaaef10dc"
+  }
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "schema": 2,
+ "contract": 1,
+ "generated": "2026-10-03T14:48:01Z",
+ "mode": "full",
+ "run": {
+  "id": "37130823647",
+  "url": "https://github.com/oceansensing/rtofs-model-fields-repo/actions/runs/37130823647"
+ },
+ "schedule": {
+  "crons": [
+   "51 1,7,13,19 * * *"
+  ],
+  "longestGapHours": 6.0
+ },
+ "products": {
+  "ssh-rtofs": {
+   "title": "RTOFS sea surface height",
+   "roots": [
+    "ssh-rtofs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-03T14:48:01Z",
+   "updated": "2026-10-03T14:48:01Z",
+   "hour": "2026-10-03T15:00:00Z",
+   "modelRun": "2026-10-03T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-03T15:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.2,
+   "nearestOffsetHours": -0.2
+  },
+  "sic-rtofs": {
+   "title": "RTOFS sea ice concentration",
+   "roots": [
+    "sic-rtofs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-03T14:48:01Z",
+   "updated": "2026-10-03T14:48:01Z",
+   "hour": "2026-10-03T15:00:00Z",
+   "modelRun": "2026-10-03T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-03T15:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.2,
+   "nearestOffsetHours": -0.2
+  },
+  "sit-rtofs": {
+   "title": "RTOFS sea ice thickness",
+   "roots": [
+    "sit-rtofs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-03T14:48:01Z",
+   "updated": "2026-10-03T14:48:01Z",
+   "hour": "2026-10-03T15:00:00Z",
+   "modelRun": "2026-10-03T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-03T15:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.2,
+   "nearestOffsetHours": -0.2
+  },
+  "sst-rtofs-useast": {
+   "title": "RTOFS US East surface temperature",
+   "roots": [
+    "sst-rtofs-useast.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-03T14:48:01Z",
+   "updated": "2026-10-03T14:48:01Z",
+   "hour": "2026-10-03T12:00:00Z",
+   "modelRun": "2026-10-03T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-03T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 2.8,
+   "nearestOffsetHours": 2.8
+  },
+  "sss-rtofs-useast": {
+   "title": "RTOFS US East surface salinity",
+   "roots": [
+    "sss-rtofs-useast.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-03T14:48:01Z",
+   "updated": "2026-10-03T14:48:01Z",
+   "hour": "2026-10-03T12:00:00Z",
+   "modelRun": "2026-10-03T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-03T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 2.8,
+   "nearestOffsetHours": 2.8
+  }
+ }
+}

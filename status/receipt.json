@@ -1,0 +1,18 @@
+{
+ "schema": 1,
+ "generated": "2026-10-03T14:48:01Z",
+ "mode": "full",
+ "fates": {
+  "ssh-rtofs": "fresh",
+  "sic-rtofs": "fresh",
+  "sit-rtofs": "fresh",
+  "sst-rtofs-useast": "fresh",
+  "sss-rtofs-useast": "fresh"
+ },
+ "reasons": {},
+ "built": {},
+ "withheld": {},
+ "deploy": true,
+ "notes": [],
+ "behind": []
+}

@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "sss-rtofs-useast",
+ "title": "RTOFS US East surface salinity",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-03T14:48:01Z",
+ "updated": "2026-10-03T14:48:01Z",
+ "hour": "2026-10-03T12:00:00Z",
+ "modelRun": "2026-10-03T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-10-03T12:00:00Z"
+ ],
+ "files": {
+  "sss-rtofs-useast.json": {
+   "bytes": 4417818,
+   "sha256": "9195659f6f054996d4e5e0ce25f08e31810ef3667a66403bdd37a0696b6963dc"
+  }
+ }
+}
