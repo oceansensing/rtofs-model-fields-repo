@@ -27,6 +27,19 @@ These products are published **operationally but not drawn on the website's
 map** — the owner's call, 2026-09-27. The map's status line still reports
 them when they fall behind, which is how their health stays visible.
 
+## Published to R2 alone (since 2026-10-10)
+
+Declared `r2_only` in `pipeline/products.toml`: the same run builds these,
+they are left out of this repository's Pages site and its status, and the R2
+job publishes them beside the rest (the site pipeline's D13, its note of
+2026-10-09). Their roots stay on the `published` branch, as every product's do.
+
+| root | quantity | grid |
+| --- | --- | --- |
+| `nearbottomt-rtofs-useast.json` | the temperature at each column's deepest wet level of the subset's 40 depths — near the bottom, not at it | US East, 0.08 degree, `regional: true` |
+| `nearbottoms-rtofs-useast.json` | the salinity there | US East, 0.08 degree, `regional: true` |
+| `nearbottomdepth-rtofs-useast.json` | that level's depth, m | US East, 0.08 degree, `regional: true` |
+
 ## Where the data comes from
 
 **Source**: NOAA's open-data bucket on AWS, registry entry
