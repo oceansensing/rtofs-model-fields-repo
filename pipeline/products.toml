@@ -24,7 +24,7 @@ timeout_minutes = 20
 
 # Named after the server.
 [steps.rtofs]
-cmd = ["python3", "scripts/fetch-rtofs.py", "--only=ssh-rtofs,sic-rtofs,sit-rtofs,sst-rtofs-useast,sss-rtofs-useast"]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=ssh-rtofs,sic-rtofs,sit-rtofs,sst-rtofs-useast,sss-rtofs-useast,nearbottomt-rtofs-useast,nearbottoms-rtofs-useast,nearbottomdepth-rtofs-useast"]
 lane = "noaa-rtofs-bucket"
 
 [products.ssh-rtofs]
@@ -66,3 +66,36 @@ roots = ["sss-rtofs-useast.json"]
 writes = ["sss-rtofs-useast.json"]
 max_age_hours = 12
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sss-rtofs-useast"]
+
+# **R2's alone** (2026-10-09, the site pipeline's D13 note): `r2_only` leaves it out of
+# the Pages site and Pages' status; the R2 job publishes it beside the rest.
+[products.nearbottomt-rtofs-useast]
+title = "RTOFS US East near-bottom temperature"
+step = "rtofs"
+roots = ["nearbottomt-rtofs-useast.json"]
+writes = ["nearbottomt-rtofs-useast.json"]
+max_age_hours = 12
+r2_only = true
+namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=nearbottomt-rtofs-useast"]
+
+# **R2's alone** (2026-10-09, the site pipeline's D13 note): `r2_only` leaves it out of
+# the Pages site and Pages' status; the R2 job publishes it beside the rest.
+[products.nearbottoms-rtofs-useast]
+title = "RTOFS US East near-bottom salinity"
+step = "rtofs"
+roots = ["nearbottoms-rtofs-useast.json"]
+writes = ["nearbottoms-rtofs-useast.json"]
+max_age_hours = 12
+r2_only = true
+namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=nearbottoms-rtofs-useast"]
+
+# **R2's alone** (2026-10-09, the site pipeline's D13 note): `r2_only` leaves it out of
+# the Pages site and Pages' status; the R2 job publishes it beside the rest.
+[products.nearbottomdepth-rtofs-useast]
+title = "RTOFS US East depth of the near-bottom level"
+step = "rtofs"
+roots = ["nearbottomdepth-rtofs-useast.json"]
+writes = ["nearbottomdepth-rtofs-useast.json"]
+max_age_hours = 12
+r2_only = true
+namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=nearbottomdepth-rtofs-useast"]
