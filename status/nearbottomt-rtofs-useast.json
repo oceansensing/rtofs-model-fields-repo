@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "nearbottomt-rtofs-useast",
+ "title": "RTOFS US East near-bottom temperature",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-17T19:56:27Z",
+ "updated": "2026-10-17T19:56:27Z",
+ "hour": "2026-10-17T18:00:00Z",
+ "modelRun": "2026-10-17T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-10-17T18:00:00Z"
+ ],
+ "files": {
+  "nearbottomt-rtofs-useast.json": {
+   "bytes": 4062172,
+   "sha256": "54e65d3a73fa8c04b82eaa5810fa9c4268f610eafa658cc9e3b542ccc4e99e71"
+  }
+ }
+}

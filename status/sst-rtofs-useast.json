@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "sst-rtofs-useast",
+ "title": "RTOFS US East surface temperature",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-17T19:56:27Z",
+ "updated": "2026-10-17T19:56:27Z",
+ "hour": "2026-10-17T18:00:00Z",
+ "modelRun": "2026-10-17T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-10-17T18:00:00Z"
+ ],
+ "files": {
+  "sst-rtofs-useast.json": {
+   "bytes": 4315992,
+   "sha256": "e527a18b06f8868c9887fae2d6dbb051d99e3b78a87336a10bb4651fab03f8a9"
+  }
+ }
+}
