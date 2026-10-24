@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "sic-rtofs",
+ "title": "RTOFS sea ice concentration",
+ "fate": "held",
+ "reason": "step rtofs exit 1",
+ "checked": "2026-10-24T07:55:17Z",
+ "updated": "2026-10-24T07:55:17Z",
+ "hour": "2026-10-24T08:00:00Z",
+ "modelRun": "2026-10-23T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-10-24T08:00:00Z"
+ ],
+ "files": {
+  "sic-rtofs.json": {
+   "bytes": 4295167,
+   "sha256": "9854e9f9b9892ef2aa64b5b01c1baa465a508f033b377bc7e9544212cf1d0af0"
+  }
+ }
+}
