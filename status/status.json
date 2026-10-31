@@ -1,0 +1,178 @@
+{
+ "schema": 2,
+ "contract": 1,
+ "generated": "2026-10-31T19:55:17Z",
+ "mode": "full",
+ "run": {
+  "id": "41236297293",
+  "url": "https://github.com/oceansensing/rtofs-model-fields-repo/actions/runs/41236297293"
+ },
+ "schedule": {
+  "crons": [
+   "51 1,7,13,19 * * *"
+  ],
+  "longestGapHours": 6.0
+ },
+ "products": {
+  "ssh-rtofs": {
+   "title": "RTOFS sea surface height",
+   "roots": [
+    "ssh-rtofs.json"
+   ],
+   "fate": "held",
+   "reason": "step rtofs exit 1",
+   "checked": "2026-10-29T19:54:12Z",
+   "updated": "2026-10-29T19:54:12Z",
+   "hour": "2026-10-29T20:00:00Z",
+   "modelRun": "2026-10-29T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-29T20:00:00Z"
+   ],
+   "stale": true,
+   "staleCause": "ours",
+   "ageHours": 47.92,
+   "nearestOffsetHours": 47.92
+  },
+  "sic-rtofs": {
+   "title": "RTOFS sea ice concentration",
+   "roots": [
+    "sic-rtofs.json"
+   ],
+   "fate": "held",
+   "reason": "step rtofs exit 1",
+   "checked": "2026-10-29T19:54:12Z",
+   "updated": "2026-10-29T19:54:12Z",
+   "hour": "2026-10-29T20:00:00Z",
+   "modelRun": "2026-10-29T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-29T20:00:00Z"
+   ],
+   "stale": true,
+   "staleCause": "ours",
+   "ageHours": 47.92,
+   "nearestOffsetHours": 47.92
+  },
+  "sit-rtofs": {
+   "title": "RTOFS sea ice thickness",
+   "roots": [
+    "sit-rtofs.json"
+   ],
+   "fate": "held",
+   "reason": "step rtofs exit 1",
+   "checked": "2026-10-29T19:54:12Z",
+   "updated": "2026-10-29T19:54:12Z",
+   "hour": "2026-10-29T20:00:00Z",
+   "modelRun": "2026-10-29T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-29T20:00:00Z"
+   ],
+   "stale": true,
+   "staleCause": "ours",
+   "ageHours": 47.92,
+   "nearestOffsetHours": 47.92
+  },
+  "sst-rtofs-useast": {
+   "title": "RTOFS US East surface temperature",
+   "roots": [
+    "sst-rtofs-useast.json"
+   ],
+   "fate": "held",
+   "reason": "step rtofs exit 1",
+   "checked": "2026-10-29T19:54:12Z",
+   "updated": "2026-10-29T19:54:12Z",
+   "hour": "2026-10-29T18:00:00Z",
+   "modelRun": "2026-10-29T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-29T18:00:00Z"
+   ],
+   "stale": true,
+   "staleCause": "ours",
+   "ageHours": 49.92,
+   "nearestOffsetHours": 49.92
+  },
+  "sss-rtofs-useast": {
+   "title": "RTOFS US East surface salinity",
+   "roots": [
+    "sss-rtofs-useast.json"
+   ],
+   "fate": "held",
+   "reason": "step rtofs exit 1",
+   "checked": "2026-10-29T19:54:12Z",
+   "updated": "2026-10-29T19:54:12Z",
+   "hour": "2026-10-29T18:00:00Z",
+   "modelRun": "2026-10-29T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-29T18:00:00Z"
+   ],
+   "stale": true,
+   "staleCause": "ours",
+   "ageHours": 49.92,
+   "nearestOffsetHours": 49.92
+  },
+  "nearbottomt-rtofs-useast": {
+   "title": "RTOFS US East near-bottom temperature",
+   "roots": [
+    "nearbottomt-rtofs-useast.json"
+   ],
+   "fate": "held",
+   "reason": "step rtofs exit 1",
+   "checked": "2026-10-29T19:54:12Z",
+   "updated": "2026-10-29T19:54:12Z",
+   "hour": "2026-10-29T18:00:00Z",
+   "modelRun": "2026-10-29T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-29T18:00:00Z"
+   ],
+   "stale": true,
+   "staleCause": "ours",
+   "ageHours": 49.92,
+   "nearestOffsetHours": 49.92
+  },
+  "nearbottoms-rtofs-useast": {
+   "title": "RTOFS US East near-bottom salinity",
+   "roots": [
+    "nearbottoms-rtofs-useast.json"
+   ],
+   "fate": "held",
+   "reason": "step rtofs exit 1",
+   "checked": "2026-10-29T19:54:12Z",
+   "updated": "2026-10-29T19:54:12Z",
+   "hour": "2026-10-29T18:00:00Z",
+   "modelRun": "2026-10-29T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-29T18:00:00Z"
+   ],
+   "stale": true,
+   "staleCause": "ours",
+   "ageHours": 49.92,
+   "nearestOffsetHours": 49.92
+  },
+  "nearbottomdepth-rtofs-useast": {
+   "title": "RTOFS US East depth of the near-bottom level",
+   "roots": [
+    "nearbottomdepth-rtofs-useast.json"
+   ],
+   "fate": "held",
+   "reason": "step rtofs exit 1",
+   "checked": "2026-10-29T19:54:12Z",
+   "updated": "2026-10-29T19:54:12Z",
+   "hour": "2026-10-29T18:00:00Z",
+   "modelRun": "2026-10-29T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-29T18:00:00Z"
+   ],
+   "stale": true,
+   "staleCause": "ours",
+   "ageHours": 49.92,
+   "nearestOffsetHours": 49.92
+  }
+ }
+}
