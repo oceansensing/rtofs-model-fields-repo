@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "nearbottoms-rtofs-useast",
+ "title": "RTOFS US East near-bottom salinity",
+ "fate": "held",
+ "reason": "step rtofs exit 1",
+ "checked": "2026-11-05T13:56:22Z",
+ "updated": "2026-11-05T13:56:22Z",
+ "hour": "2026-11-05T12:00:00Z",
+ "modelRun": "2026-11-05T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-05T12:00:00Z"
+ ],
+ "files": {
+  "nearbottoms-rtofs-useast.json": {
+   "bytes": 4405179,
+   "sha256": "e971e6ed0f9604810041501c470a5ad5de5b89704b80b14c1d5081a2ff94defe"
+  }
+ }
+}
