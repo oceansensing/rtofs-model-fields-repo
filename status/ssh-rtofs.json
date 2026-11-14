@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "ssh-rtofs",
+ "title": "RTOFS sea surface height",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-14T07:56:12Z",
+ "updated": "2026-11-14T07:56:12Z",
+ "hour": "2026-11-14T08:00:00Z",
+ "modelRun": "2026-11-13T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-14T08:00:00Z"
+ ],
+ "files": {
+  "ssh-rtofs.json": {
+   "bytes": 5845779,
+   "sha256": "bf58282e11389e64823d7b592c94cc542ce18194cc5476b449b1c7c3aacd5999"
+  }
+ }
+}
