@@ -22,14 +22,48 @@ roots = ["node", "scripts/test-schema.mjs", "--roots"]
 [defaults]
 timeout_minutes = 20
 
-# Named after the server.
-[steps.rtofs]
-cmd = ["python3", "scripts/fetch-rtofs.py", "--only=ssh-rtofs,sic-rtofs,sit-rtofs,sst-rtofs-useast,sss-rtofs-useast,nearbottomt-rtofs-useast,nearbottoms-rtofs-useast,nearbottomdepth-rtofs-useast"]
+# **A step a product** (2026-11-14), each named for the product it makes and
+# scoped to it. A step's exit is the fate of every product it makes, and as
+# one step for all eight, one product's refusal held them all: on 2026-11-14
+# a single cell under the near-bottom temperature's floor held every product
+# for two runs. One lane, so the steps ask NOAA's bucket one at a time, in
+# this order, and each reads only what its own product needs (the
+# near-bottom's read the US East file's levels, 4 s a variable when measured).
+[steps.ssh-rtofs]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=ssh-rtofs"]
+lane = "noaa-rtofs-bucket"
+
+[steps.sic-rtofs]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=sic-rtofs"]
+lane = "noaa-rtofs-bucket"
+
+[steps.sit-rtofs]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=sit-rtofs"]
+lane = "noaa-rtofs-bucket"
+
+[steps.sst-rtofs-useast]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=sst-rtofs-useast"]
+lane = "noaa-rtofs-bucket"
+
+[steps.sss-rtofs-useast]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=sss-rtofs-useast"]
+lane = "noaa-rtofs-bucket"
+
+[steps.nearbottomt-rtofs-useast]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=nearbottomt-rtofs-useast"]
+lane = "noaa-rtofs-bucket"
+
+[steps.nearbottoms-rtofs-useast]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=nearbottoms-rtofs-useast"]
+lane = "noaa-rtofs-bucket"
+
+[steps.nearbottomdepth-rtofs-useast]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=nearbottomdepth-rtofs-useast"]
 lane = "noaa-rtofs-bucket"
 
 [products.ssh-rtofs]
 title = "RTOFS sea surface height"
-step = "rtofs"
+step = "ssh-rtofs"
 roots = ["ssh-rtofs.json"]
 writes = ["ssh-rtofs.json"]
 max_age_hours = 12
@@ -37,7 +71,7 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=ssh-rto
 
 [products.sic-rtofs]
 title = "RTOFS sea ice concentration"
-step = "rtofs"
+step = "sic-rtofs"
 roots = ["sic-rtofs.json"]
 writes = ["sic-rtofs.json"]
 max_age_hours = 12
@@ -45,7 +79,7 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sic-rto
 
 [products.sit-rtofs]
 title = "RTOFS sea ice thickness"
-step = "rtofs"
+step = "sit-rtofs"
 roots = ["sit-rtofs.json"]
 writes = ["sit-rtofs.json"]
 max_age_hours = 12
@@ -53,7 +87,7 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sit-rto
 
 [products.sst-rtofs-useast]
 title = "RTOFS US East surface temperature"
-step = "rtofs"
+step = "sst-rtofs-useast"
 roots = ["sst-rtofs-useast.json"]
 writes = ["sst-rtofs-useast.json"]
 max_age_hours = 12
@@ -61,7 +95,7 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sst-rto
 
 [products.sss-rtofs-useast]
 title = "RTOFS US East surface salinity"
-step = "rtofs"
+step = "sss-rtofs-useast"
 roots = ["sss-rtofs-useast.json"]
 writes = ["sss-rtofs-useast.json"]
 max_age_hours = 12
@@ -71,7 +105,7 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sss-rto
 # the Pages site and Pages' status; the R2 job publishes it beside the rest.
 [products.nearbottomt-rtofs-useast]
 title = "RTOFS US East near-bottom temperature"
-step = "rtofs"
+step = "nearbottomt-rtofs-useast"
 roots = ["nearbottomt-rtofs-useast.json"]
 writes = ["nearbottomt-rtofs-useast.json"]
 max_age_hours = 12
@@ -82,7 +116,7 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=nearbot
 # the Pages site and Pages' status; the R2 job publishes it beside the rest.
 [products.nearbottoms-rtofs-useast]
 title = "RTOFS US East near-bottom salinity"
-step = "rtofs"
+step = "nearbottoms-rtofs-useast"
 roots = ["nearbottoms-rtofs-useast.json"]
 writes = ["nearbottoms-rtofs-useast.json"]
 max_age_hours = 12
@@ -93,7 +127,7 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=nearbot
 # the Pages site and Pages' status; the R2 job publishes it beside the rest.
 [products.nearbottomdepth-rtofs-useast]
 title = "RTOFS US East depth of the near-bottom level"
-step = "rtofs"
+step = "nearbottomdepth-rtofs-useast"
 roots = ["nearbottomdepth-rtofs-useast.json"]
 writes = ["nearbottomdepth-rtofs-useast.json"]
 max_age_hours = 12

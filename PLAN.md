@@ -46,3 +46,26 @@ line. Dependabot reads requirements files and never a workflow line: an
 inline pin elsewhere had carried `requests` 2.32.3, a version with two
 advisories, unflagged. The site's `check:docs` now refuses an inline package
 here. Confirmed by a dispatched run, green on build, Pages and R2.
+
+## 2026-11-14 — a step a product
+
+Until today one step made all eight products, and a step's exit is the fate of
+every product it makes. On 2026-11-14 one column of NOAA's US East file — at
+65.50 N 83.89 W and 250 m, off Southampton Island, one of 618,972 — read
+-4.091 C at the cycle's f012 and -3.052 at f018, under the fetcher's floor of
+-3 for the near-bottom temperature. That one product's refusal ended the step
+non-zero, and all eight were held for two runs (13:53 and 19:53 UTC), standing
+at 07:56.
+
+Two changes. The floor is -5 in the site's `scripts/fetch-rtofs.py`: a wide
+bound refuses a wrong unit, not the model's own extreme. And **each product
+has a step of its own** in `pipeline/products.toml`, named for it and scoped
+to it with `--only=`, all in the one lane, so a product's refusal holds that
+product alone.
+
+Rehearsed through the orchestrator with the site's fetcher: eight steps, eight
+`fresh`, every file matching the contract; and with the near-bottom
+temperature's floor planted at -2, that step exit 1 and that product alone
+`held`, the other seven steps ok. The eight took 3 min 11 s on a workstation,
+against under half a minute for the one step on the runner — each step opens
+the files again.
