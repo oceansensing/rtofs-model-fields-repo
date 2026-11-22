@@ -19,8 +19,13 @@
 check = ["node", "scripts/test-schema.mjs"]
 roots = ["node", "scripts/test-schema.mjs", "--roots"]
 
+# **Two days ahead and one behind** (2026-11-22, DECISIONS D3; the site
+# pipeline's D16): `hours_ahead` and `hours_behind` are each product's window,
+# its dated files R2's alone and kept there while a base lists them. The base
+# is read first and the hours added inside ten minutes of a step; a step has
+# thirty, since one request gives up after eleven.
 [defaults]
-timeout_minutes = 20
+timeout_minutes = 30
 
 # **A step a product** (2026-11-14), each named for the product it makes and
 # scoped to it. A step's exit is the fate of every product it makes, and as
@@ -65,7 +70,11 @@ lane = "noaa-rtofs-bucket"
 title = "RTOFS sea surface height"
 step = "ssh-rtofs"
 roots = ["ssh-rtofs.json"]
-writes = ["ssh-rtofs.json"]
+writes = ["ssh-rtofs.json", "ssh-rtofs.v*.json"]
+r2_only = ["ssh-rtofs.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 12
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=ssh-rtofs"]
 
@@ -73,7 +82,11 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=ssh-rto
 title = "RTOFS sea ice concentration"
 step = "sic-rtofs"
 roots = ["sic-rtofs.json"]
-writes = ["sic-rtofs.json"]
+writes = ["sic-rtofs.json", "sic-rtofs.v*.json"]
+r2_only = ["sic-rtofs.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 12
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sic-rtofs"]
 
@@ -81,7 +94,11 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sic-rto
 title = "RTOFS sea ice thickness"
 step = "sit-rtofs"
 roots = ["sit-rtofs.json"]
-writes = ["sit-rtofs.json"]
+writes = ["sit-rtofs.json", "sit-rtofs.v*.json"]
+r2_only = ["sit-rtofs.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 12
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sit-rtofs"]
 
@@ -89,7 +106,11 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sit-rto
 title = "RTOFS US East surface temperature"
 step = "sst-rtofs-useast"
 roots = ["sst-rtofs-useast.json"]
-writes = ["sst-rtofs-useast.json"]
+writes = ["sst-rtofs-useast.json", "sst-rtofs-useast.v*.json"]
+r2_only = ["sst-rtofs-useast.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 12
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sst-rtofs-useast"]
 
@@ -97,7 +118,11 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sst-rto
 title = "RTOFS US East surface salinity"
 step = "sss-rtofs-useast"
 roots = ["sss-rtofs-useast.json"]
-writes = ["sss-rtofs-useast.json"]
+writes = ["sss-rtofs-useast.json", "sss-rtofs-useast.v*.json"]
+r2_only = ["sss-rtofs-useast.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 12
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sss-rtofs-useast"]
 
@@ -107,7 +132,10 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=sss-rto
 title = "RTOFS US East near-bottom temperature"
 step = "nearbottomt-rtofs-useast"
 roots = ["nearbottomt-rtofs-useast.json"]
-writes = ["nearbottomt-rtofs-useast.json"]
+writes = ["nearbottomt-rtofs-useast.json", "nearbottomt-rtofs-useast.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 12
 r2_only = true
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=nearbottomt-rtofs-useast"]
@@ -118,7 +146,10 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=nearbot
 title = "RTOFS US East near-bottom salinity"
 step = "nearbottoms-rtofs-useast"
 roots = ["nearbottoms-rtofs-useast.json"]
-writes = ["nearbottoms-rtofs-useast.json"]
+writes = ["nearbottoms-rtofs-useast.json", "nearbottoms-rtofs-useast.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 12
 r2_only = true
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=nearbottoms-rtofs-useast"]
