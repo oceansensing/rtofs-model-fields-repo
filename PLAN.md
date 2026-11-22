@@ -69,3 +69,10 @@ temperature's floor planted at -2, that step exit 1 and that product alone
 `held`, the other seven steps ok. The eight took 3 min 11 s on a workstation,
 against under half a minute for the one step on the runner — each step opens
 the files again.
+
+## 2026-11-22 — the times either side, declared and rehearsed; not yet run (D3)
+
+Every product but the near-bottom level's depth declares 48 hours ahead and 24 behind (`974f8e1`, pushed 16:33 UTC).
+Rehearsed, nothing published: a new cycle 22 minutes and 1,353.3 MB to R2, the run six hours on 3 min 37 s and
+144.4 MB. Open: the first scheduled run and the second, where keeping is proven; the sea surface height step's time
+on the runner (407 s of its 600 in rehearsal).

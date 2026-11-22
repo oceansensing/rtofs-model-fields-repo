@@ -158,6 +158,11 @@ fact from a guess that aged.
 
 ## What must not be got wrong here
 
+- **An hour behind is never written again under its name** (D3): readers hold it for good, so an hour read
+  again is named for its run, `.r<run>`.
+- **The `published` branch follows the R2 job** (`remember`): the next run takes what is published from that
+  branch's listing, so it is never pushed beside the R2 publish.
+- **The hours never cost the base**: the base first, the hours inside ten minutes of a step.
 - **Surface temperature, salinity and currents are NOT in the global NetCDF
   files**, only in a 437 MB HYCOM binary per step; the US East subset is
   where they come from (option A, 2026-09-27). Global coverage for them is
@@ -194,8 +199,9 @@ fact from a guess that aged.
   with `--only=` naming this repository's products: too wide and the write
   fence refuses the run, too narrow and declared files are never written and
   their previous copies are served frozen.
-- **A green run is not a healthy one.** No workflow fails on `behind`; the
-  site's watchdog issue and each product's `staleCause` are the alarm.
+- **A green run is not a healthy one.** No workflow fails on `behind`; for what Pages carries, the site's watchdog issue and each
+  product's `staleCause` are the alarm; for what R2 alone carries, read the fate and `staleCause` in
+  the `published` branch's status, since the watchdog sees only the origin's schedule.
 - **This repository is public**, so its Actions logs are readable by anyone
   signed in to GitHub. Nothing secret is printed, and the downstream app is
   named nowhere here (the owner, 2026-09-26).
