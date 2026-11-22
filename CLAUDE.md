@@ -163,6 +163,8 @@ fact from a guess that aged.
 - **The `published` branch follows the R2 job** (`remember`): the next run takes what is published from that
   branch's listing, so it is never pushed beside the R2 publish.
 - **The hours never cost the base**: the base first, the hours inside ten minutes of a step.
+- **A polar cell can be empty without being land**: the regrid leaves a cell empty where no model point lands
+  in it (about the North Pole; PLAN, 2026-11-22), so count such cells before reading one as a mask.
 - **Surface temperature, salinity and currents are NOT in the global NetCDF
   files**, only in a 437 MB HYCOM binary per step; the US East subset is
   where they come from (option A, 2026-09-27). Global coverage for them is

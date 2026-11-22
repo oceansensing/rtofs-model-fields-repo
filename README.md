@@ -41,9 +41,9 @@ job publishes them beside the rest (the site pipeline's D13, its note of
 | `nearbottoms-rtofs-useast.json` | the salinity there | US East, 0.08 degree, `regional: true` |
 | `nearbottomdepth-rtofs-useast.json` | that level's depth, m | US East, 0.08 degree, `regional: true` |
 
-## The times either side (declared 2026-11-22; no run had published them when this was written)
+## The times either side (since 2026-11-22)
 
-Every root but the near-bottom level's depth, which does not change, is declared to publish two days ahead and one
+Every root but the near-bottom level's depth, which does not change, publishes two days ahead and one
 behind (DECISIONS D3), the global roots hourly to f072 and three-hourly past it,
 US East six-hourly. A root's header lists every time in `moreFrames`, its own
 among them; none lists `frames`. An hour read while ahead is `<root>.v<time>.json`, and

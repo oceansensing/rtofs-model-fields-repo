@@ -70,9 +70,15 @@ temperature's floor planted at -2, that step exit 1 and that product alone
 against under half a minute for the one step on the runner — each step opens
 the files again.
 
-## 2026-11-22 — the times either side, declared and rehearsed; not yet run (D3)
+## 2026-11-22 — the times either side, declared, rehearsed and publishing (D3)
 
 Every product but the near-bottom level's depth declares 48 hours ahead and 24 behind (`974f8e1`, pushed 16:33 UTC).
 Rehearsed, nothing published: a new cycle 22 minutes and 1,353.3 MB to R2, the run six hours on 3 min 37 s and
-144.4 MB. Open: the first scheduled run and the second, where keeping is proven; the sea surface height step's time
-on the runner (407 s of its 600 in rehearsal).
+144.4 MB. **The first run**, `45063224056` (19:52–20:22 UTC): seven roots fresh, each from 24 hours
+behind to 48 ahead, none left out, 292 files on R2 and the branch moved after them. Sea surface height's hours took
+up to 503 s of their 600 on the runner (407 in rehearsal); past 600 the hours not yet read are left out. Open: the
+second run, where keeping is proven, and that margin.
+
+**Found that day, older than the times either side, not fixed**: the global roots publish a quarter-degree cell
+empty where no model point lands in it — 896 of the 1,440 cells at 89.75 N, 126 at 88 N, 10 at 85 N — so a polar
+drawing shows streaks from the pole. Open: those cells from the model's nearest point, its land left empty.
