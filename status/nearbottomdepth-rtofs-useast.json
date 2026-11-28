@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "nearbottomdepth-rtofs-useast",
+ "title": "RTOFS US East depth of the near-bottom level",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T14:21:06Z",
+ "updated": "2026-11-28T14:21:06Z",
+ "hour": "2026-11-28T12:00:00Z",
+ "modelRun": "2026-11-28T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-28T12:00:00Z"
+ ],
+ "files": {
+  "nearbottomdepth-rtofs-useast.json": {
+   "bytes": 4696538,
+   "sha256": "9a76e4f80907670fe3ce03fe012d7579154cc4c038003b27532d9c4e7ef2d2c1"
+  }
+ }
+}

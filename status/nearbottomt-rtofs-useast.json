@@ -1,0 +1,60 @@
+{
+ "schema": 1,
+ "product": "nearbottomt-rtofs-useast",
+ "title": "RTOFS US East near-bottom temperature",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T14:21:06Z",
+ "updated": "2026-11-28T14:21:06Z",
+ "hour": "2026-11-28T12:00:00Z",
+ "modelRun": "2026-11-28T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-28T12:00:00Z"
+ ],
+ "files": {
+  "nearbottomt-rtofs-useast.json": {
+   "bytes": 4070860,
+   "sha256": "4f615181bf429776c6489aa521ceebdf87627655a0aaa00748d024dd6d275b99"
+  },
+  "nearbottomt-rtofs-useast.v20261127T1200Z.r20261128T0000Z.json": {
+   "bytes": 4068853
+  },
+  "nearbottomt-rtofs-useast.v20261127T1800Z.r20261128T0000Z.json": {
+   "bytes": 4068927
+  },
+  "nearbottomt-rtofs-useast.v20261128T0000Z.r20261128T0000Z.json": {
+   "bytes": 4069048
+  },
+  "nearbottomt-rtofs-useast.v20261128T0600Z.r20261128T0000Z.json": {
+   "bytes": 4069139
+  },
+  "nearbottomt-rtofs-useast.v20261128T1200Z.json": {
+   "bytes": 4069133
+  },
+  "nearbottomt-rtofs-useast.v20261128T1800Z.json": {
+   "bytes": 4068940
+  },
+  "nearbottomt-rtofs-useast.v20261129T0000Z.json": {
+   "bytes": 4069115
+  },
+  "nearbottomt-rtofs-useast.v20261129T0600Z.json": {
+   "bytes": 4068882
+  },
+  "nearbottomt-rtofs-useast.v20261129T1200Z.json": {
+   "bytes": 4069129
+  },
+  "nearbottomt-rtofs-useast.v20261129T1800Z.json": {
+   "bytes": 4068908
+  },
+  "nearbottomt-rtofs-useast.v20261130T0000Z.json": {
+   "bytes": 4069131
+  },
+  "nearbottomt-rtofs-useast.v20261130T0600Z.json": {
+   "bytes": 4069189
+  },
+  "nearbottomt-rtofs-useast.v20261130T1200Z.json": {
+   "bytes": 4069388
+  }
+ }
+}

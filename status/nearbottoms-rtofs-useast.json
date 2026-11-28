@@ -1,0 +1,60 @@
+{
+ "schema": 1,
+ "product": "nearbottoms-rtofs-useast",
+ "title": "RTOFS US East near-bottom salinity",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T14:21:06Z",
+ "updated": "2026-11-28T14:21:06Z",
+ "hour": "2026-11-28T12:00:00Z",
+ "modelRun": "2026-11-28T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-28T12:00:00Z"
+ ],
+ "files": {
+  "nearbottoms-rtofs-useast.json": {
+   "bytes": 4407274,
+   "sha256": "8e4a7d696bf6d638e8d243ba0612bb0612a55c1f66a73ed2c8be3c623319d5b2"
+  },
+  "nearbottoms-rtofs-useast.v20261127T1200Z.r20261128T0000Z.json": {
+   "bytes": 4405854
+  },
+  "nearbottoms-rtofs-useast.v20261127T1800Z.r20261128T0000Z.json": {
+   "bytes": 4405871
+  },
+  "nearbottoms-rtofs-useast.v20261128T0000Z.r20261128T0000Z.json": {
+   "bytes": 4405824
+  },
+  "nearbottoms-rtofs-useast.v20261128T0600Z.r20261128T0000Z.json": {
+   "bytes": 4405660
+  },
+  "nearbottoms-rtofs-useast.v20261128T1200Z.json": {
+   "bytes": 4405547
+  },
+  "nearbottoms-rtofs-useast.v20261128T1800Z.json": {
+   "bytes": 4405387
+  },
+  "nearbottoms-rtofs-useast.v20261129T0000Z.json": {
+   "bytes": 4405200
+  },
+  "nearbottoms-rtofs-useast.v20261129T0600Z.json": {
+   "bytes": 4405012
+  },
+  "nearbottoms-rtofs-useast.v20261129T1200Z.json": {
+   "bytes": 4404953
+  },
+  "nearbottoms-rtofs-useast.v20261129T1800Z.json": {
+   "bytes": 4405038
+  },
+  "nearbottoms-rtofs-useast.v20261130T0000Z.json": {
+   "bytes": 4405005
+  },
+  "nearbottoms-rtofs-useast.v20261130T0600Z.json": {
+   "bytes": 4404933
+  },
+  "nearbottoms-rtofs-useast.v20261130T1200Z.json": {
+   "bytes": 4405070
+  }
+ }
+}

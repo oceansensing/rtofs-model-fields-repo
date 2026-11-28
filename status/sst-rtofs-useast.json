@@ -1,0 +1,60 @@
+{
+ "schema": 1,
+ "product": "sst-rtofs-useast",
+ "title": "RTOFS US East surface temperature",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T14:21:06Z",
+ "updated": "2026-11-28T14:21:06Z",
+ "hour": "2026-11-28T12:00:00Z",
+ "modelRun": "2026-11-28T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-28T12:00:00Z"
+ ],
+ "files": {
+  "sst-rtofs-useast.json": {
+   "bytes": 4345720,
+   "sha256": "95f830ce09d5aba976a730f392625c9fe1af42663ddf25338ea06ae0d789edc6"
+  },
+  "sst-rtofs-useast.v20261127T1200Z.r20261128T0000Z.json": {
+   "bytes": 4343999
+  },
+  "sst-rtofs-useast.v20261127T1800Z.r20261128T0000Z.json": {
+   "bytes": 4343786
+  },
+  "sst-rtofs-useast.v20261128T0000Z.r20261128T0000Z.json": {
+   "bytes": 4343669
+  },
+  "sst-rtofs-useast.v20261128T0600Z.r20261128T0000Z.json": {
+   "bytes": 4344304
+  },
+  "sst-rtofs-useast.v20261128T1200Z.json": {
+   "bytes": 4344097
+  },
+  "sst-rtofs-useast.v20261128T1800Z.json": {
+   "bytes": 4344401
+  },
+  "sst-rtofs-useast.v20261129T0000Z.json": {
+   "bytes": 4344470
+  },
+  "sst-rtofs-useast.v20261129T0600Z.json": {
+   "bytes": 4344526
+  },
+  "sst-rtofs-useast.v20261129T1200Z.json": {
+   "bytes": 4345035
+  },
+  "sst-rtofs-useast.v20261129T1800Z.json": {
+   "bytes": 4344401
+  },
+  "sst-rtofs-useast.v20261130T0000Z.json": {
+   "bytes": 4345127
+  },
+  "sst-rtofs-useast.v20261130T0600Z.json": {
+   "bytes": 4345590
+  },
+  "sst-rtofs-useast.v20261130T1200Z.json": {
+   "bytes": 4345539
+  }
+ }
+}

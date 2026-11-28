@@ -1,0 +1,60 @@
+{
+ "schema": 1,
+ "product": "sss-rtofs-useast",
+ "title": "RTOFS US East surface salinity",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T14:21:06Z",
+ "updated": "2026-11-28T14:21:06Z",
+ "hour": "2026-11-28T12:00:00Z",
+ "modelRun": "2026-11-28T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-28T12:00:00Z"
+ ],
+ "files": {
+  "sss-rtofs-useast.json": {
+   "bytes": 4419908,
+   "sha256": "12641bde1df09a3417dce8737789f3c015e79d7b672cbbc6d8e9480a1729eb98"
+  },
+  "sss-rtofs-useast.v20261127T1200Z.r20261128T0000Z.json": {
+   "bytes": 4417933
+  },
+  "sss-rtofs-useast.v20261127T1800Z.r20261128T0000Z.json": {
+   "bytes": 4417855
+  },
+  "sss-rtofs-useast.v20261128T0000Z.r20261128T0000Z.json": {
+   "bytes": 4417791
+  },
+  "sss-rtofs-useast.v20261128T0600Z.r20261128T0000Z.json": {
+   "bytes": 4417973
+  },
+  "sss-rtofs-useast.v20261128T1200Z.json": {
+   "bytes": 4418285
+  },
+  "sss-rtofs-useast.v20261128T1800Z.json": {
+   "bytes": 4417933
+  },
+  "sss-rtofs-useast.v20261129T0000Z.json": {
+   "bytes": 4418082
+  },
+  "sss-rtofs-useast.v20261129T0600Z.json": {
+   "bytes": 4418282
+  },
+  "sss-rtofs-useast.v20261129T1200Z.json": {
+   "bytes": 4418090
+  },
+  "sss-rtofs-useast.v20261129T1800Z.json": {
+   "bytes": 4417917
+  },
+  "sss-rtofs-useast.v20261130T0000Z.json": {
+   "bytes": 4418464
+  },
+  "sss-rtofs-useast.v20261130T0600Z.json": {
+   "bytes": 4418380
+  },
+  "sss-rtofs-useast.v20261130T1200Z.json": {
+   "bytes": 4418552
+  }
+ }
+}

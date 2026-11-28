@@ -1,0 +1,240 @@
+{
+ "schema": 1,
+ "product": "sic-rtofs",
+ "title": "RTOFS sea ice concentration",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T14:21:06Z",
+ "updated": "2026-11-28T14:21:06Z",
+ "hour": "2026-11-28T14:00:00Z",
+ "modelRun": "2026-11-28T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-28T14:00:00Z"
+ ],
+ "files": {
+  "sic-rtofs.json": {
+   "bytes": 4294135,
+   "sha256": "c9e90286e20825db7c7311d74715ad5542b49b96369ec8e22aae3df9e396e965"
+  },
+  "sic-rtofs.v20261127T1400Z.r20261128T0000Z.json": {
+   "bytes": 4288387
+  },
+  "sic-rtofs.v20261127T1500Z.r20261128T0000Z.json": {
+   "bytes": 4288626
+  },
+  "sic-rtofs.v20261127T1600Z.r20261128T0000Z.json": {
+   "bytes": 4288895
+  },
+  "sic-rtofs.v20261127T1700Z.r20261128T0000Z.json": {
+   "bytes": 4289093
+  },
+  "sic-rtofs.v20261127T1800Z.r20261128T0000Z.json": {
+   "bytes": 4289223
+  },
+  "sic-rtofs.v20261127T1900Z.r20261128T0000Z.json": {
+   "bytes": 4289249
+  },
+  "sic-rtofs.v20261127T2000Z.r20261128T0000Z.json": {
+   "bytes": 4289294
+  },
+  "sic-rtofs.v20261127T2100Z.r20261128T0000Z.json": {
+   "bytes": 4289297
+  },
+  "sic-rtofs.v20261127T2200Z.r20261128T0000Z.json": {
+   "bytes": 4289380
+  },
+  "sic-rtofs.v20261127T2300Z.r20261128T0000Z.json": {
+   "bytes": 4289415
+  },
+  "sic-rtofs.v20261128T0000Z.r20261128T0000Z.json": {
+   "bytes": 4289392
+  },
+  "sic-rtofs.v20261128T0100Z.r20261128T0000Z.json": {
+   "bytes": 4289304
+  },
+  "sic-rtofs.v20261128T0200Z.r20261128T0000Z.json": {
+   "bytes": 4289046
+  },
+  "sic-rtofs.v20261128T0300Z.r20261128T0000Z.json": {
+   "bytes": 4288899
+  },
+  "sic-rtofs.v20261128T0400Z.r20261128T0000Z.json": {
+   "bytes": 4288723
+  },
+  "sic-rtofs.v20261128T0500Z.r20261128T0000Z.json": {
+   "bytes": 4288561
+  },
+  "sic-rtofs.v20261128T0600Z.r20261128T0000Z.json": {
+   "bytes": 4288277
+  },
+  "sic-rtofs.v20261128T0700Z.r20261128T0000Z.json": {
+   "bytes": 4288043
+  },
+  "sic-rtofs.v20261128T0800Z.r20261128T0000Z.json": {
+   "bytes": 4287696
+  },
+  "sic-rtofs.v20261128T0900Z.r20261128T0000Z.json": {
+   "bytes": 4287404
+  },
+  "sic-rtofs.v20261128T1000Z.r20261128T0000Z.json": {
+   "bytes": 4287095
+  },
+  "sic-rtofs.v20261128T1100Z.r20261128T0000Z.json": {
+   "bytes": 4286694
+  },
+  "sic-rtofs.v20261128T1200Z.r20261128T0000Z.json": {
+   "bytes": 4286286
+  },
+  "sic-rtofs.v20261128T1300Z.r20261128T0000Z.json": {
+   "bytes": 4285842
+  },
+  "sic-rtofs.v20261128T1400Z.json": {
+   "bytes": 4285503
+  },
+  "sic-rtofs.v20261128T1500Z.json": {
+   "bytes": 4285201
+  },
+  "sic-rtofs.v20261128T1600Z.json": {
+   "bytes": 4284981
+  },
+  "sic-rtofs.v20261128T1700Z.json": {
+   "bytes": 4284788
+  },
+  "sic-rtofs.v20261128T1800Z.json": {
+   "bytes": 4284682
+  },
+  "sic-rtofs.v20261128T1900Z.json": {
+   "bytes": 4284559
+  },
+  "sic-rtofs.v20261128T2000Z.json": {
+   "bytes": 4284376
+  },
+  "sic-rtofs.v20261128T2100Z.json": {
+   "bytes": 4284148
+  },
+  "sic-rtofs.v20261128T2200Z.json": {
+   "bytes": 4284043
+  },
+  "sic-rtofs.v20261128T2300Z.json": {
+   "bytes": 4284039
+  },
+  "sic-rtofs.v20261129T0000Z.json": {
+   "bytes": 4283979
+  },
+  "sic-rtofs.v20261129T0100Z.json": {
+   "bytes": 4283890
+  },
+  "sic-rtofs.v20261129T0200Z.json": {
+   "bytes": 4283706
+  },
+  "sic-rtofs.v20261129T0300Z.json": {
+   "bytes": 4283644
+  },
+  "sic-rtofs.v20261129T0400Z.json": {
+   "bytes": 4283623
+  },
+  "sic-rtofs.v20261129T0500Z.json": {
+   "bytes": 4283570
+  },
+  "sic-rtofs.v20261129T0600Z.json": {
+   "bytes": 4283555
+  },
+  "sic-rtofs.v20261129T0700Z.json": {
+   "bytes": 4283496
+  },
+  "sic-rtofs.v20261129T0800Z.json": {
+   "bytes": 4283515
+  },
+  "sic-rtofs.v20261129T0900Z.json": {
+   "bytes": 4283460
+  },
+  "sic-rtofs.v20261129T1000Z.json": {
+   "bytes": 4283397
+  },
+  "sic-rtofs.v20261129T1100Z.json": {
+   "bytes": 4283274
+  },
+  "sic-rtofs.v20261129T1200Z.json": {
+   "bytes": 4283278
+  },
+  "sic-rtofs.v20261129T1300Z.json": {
+   "bytes": 4283172
+  },
+  "sic-rtofs.v20261129T1400Z.json": {
+   "bytes": 4283001
+  },
+  "sic-rtofs.v20261129T1500Z.json": {
+   "bytes": 4282738
+  },
+  "sic-rtofs.v20261129T1600Z.json": {
+   "bytes": 4282646
+  },
+  "sic-rtofs.v20261129T1700Z.json": {
+   "bytes": 4282512
+  },
+  "sic-rtofs.v20261129T1800Z.json": {
+   "bytes": 4282394
+  },
+  "sic-rtofs.v20261129T1900Z.json": {
+   "bytes": 4282312
+  },
+  "sic-rtofs.v20261129T2000Z.json": {
+   "bytes": 4282238
+  },
+  "sic-rtofs.v20261129T2100Z.json": {
+   "bytes": 4282221
+  },
+  "sic-rtofs.v20261129T2200Z.json": {
+   "bytes": 4282142
+  },
+  "sic-rtofs.v20261129T2300Z.json": {
+   "bytes": 4282147
+  },
+  "sic-rtofs.v20261130T0000Z.json": {
+   "bytes": 4282133
+  },
+  "sic-rtofs.v20261130T0100Z.json": {
+   "bytes": 4282120
+  },
+  "sic-rtofs.v20261130T0200Z.json": {
+   "bytes": 4282091
+  },
+  "sic-rtofs.v20261130T0300Z.json": {
+   "bytes": 4282078
+  },
+  "sic-rtofs.v20261130T0400Z.json": {
+   "bytes": 4282122
+  },
+  "sic-rtofs.v20261130T0500Z.json": {
+   "bytes": 4282053
+  },
+  "sic-rtofs.v20261130T0600Z.json": {
+   "bytes": 4281995
+  },
+  "sic-rtofs.v20261130T0700Z.json": {
+   "bytes": 4281915
+  },
+  "sic-rtofs.v20261130T0800Z.json": {
+   "bytes": 4281878
+  },
+  "sic-rtofs.v20261130T0900Z.json": {
+   "bytes": 4281805
+  },
+  "sic-rtofs.v20261130T1000Z.json": {
+   "bytes": 4281781
+  },
+  "sic-rtofs.v20261130T1100Z.json": {
+   "bytes": 4281793
+  },
+  "sic-rtofs.v20261130T1200Z.json": {
+   "bytes": 4281736
+  },
+  "sic-rtofs.v20261130T1300Z.json": {
+   "bytes": 4281674
+  },
+  "sic-rtofs.v20261130T1400Z.json": {
+   "bytes": 4281627
+  }
+ }
+}

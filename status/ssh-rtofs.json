@@ -1,0 +1,240 @@
+{
+ "schema": 1,
+ "product": "ssh-rtofs",
+ "title": "RTOFS sea surface height",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T14:21:06Z",
+ "updated": "2026-11-28T14:21:06Z",
+ "hour": "2026-11-28T14:00:00Z",
+ "modelRun": "2026-11-28T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-28T14:00:00Z"
+ ],
+ "files": {
+  "ssh-rtofs.json": {
+   "bytes": 5865122,
+   "sha256": "23dd0c49c8fa451da706a401494228d261324e26df7eacb4464bf566fa796608"
+  },
+  "ssh-rtofs.v20261127T1400Z.r20261128T0000Z.json": {
+   "bytes": 5855835
+  },
+  "ssh-rtofs.v20261127T1500Z.r20261128T0000Z.json": {
+   "bytes": 5854902
+  },
+  "ssh-rtofs.v20261127T1600Z.r20261128T0000Z.json": {
+   "bytes": 5855339
+  },
+  "ssh-rtofs.v20261127T1700Z.r20261128T0000Z.json": {
+   "bytes": 5855577
+  },
+  "ssh-rtofs.v20261127T1800Z.r20261128T0000Z.json": {
+   "bytes": 5855824
+  },
+  "ssh-rtofs.v20261127T1900Z.r20261128T0000Z.json": {
+   "bytes": 5855760
+  },
+  "ssh-rtofs.v20261127T2000Z.r20261128T0000Z.json": {
+   "bytes": 5855564
+  },
+  "ssh-rtofs.v20261127T2100Z.r20261128T0000Z.json": {
+   "bytes": 5856549
+  },
+  "ssh-rtofs.v20261127T2200Z.r20261128T0000Z.json": {
+   "bytes": 5856777
+  },
+  "ssh-rtofs.v20261127T2300Z.r20261128T0000Z.json": {
+   "bytes": 5856880
+  },
+  "ssh-rtofs.v20261128T0000Z.r20261128T0000Z.json": {
+   "bytes": 5856734
+  },
+  "ssh-rtofs.v20261128T0100Z.r20261128T0000Z.json": {
+   "bytes": 5856516
+  },
+  "ssh-rtofs.v20261128T0200Z.r20261128T0000Z.json": {
+   "bytes": 5856834
+  },
+  "ssh-rtofs.v20261128T0300Z.r20261128T0000Z.json": {
+   "bytes": 5856679
+  },
+  "ssh-rtofs.v20261128T0400Z.r20261128T0000Z.json": {
+   "bytes": 5856283
+  },
+  "ssh-rtofs.v20261128T0500Z.r20261128T0000Z.json": {
+   "bytes": 5856213
+  },
+  "ssh-rtofs.v20261128T0600Z.r20261128T0000Z.json": {
+   "bytes": 5856703
+  },
+  "ssh-rtofs.v20261128T0700Z.r20261128T0000Z.json": {
+   "bytes": 5856130
+  },
+  "ssh-rtofs.v20261128T0800Z.r20261128T0000Z.json": {
+   "bytes": 5856526
+  },
+  "ssh-rtofs.v20261128T0900Z.r20261128T0000Z.json": {
+   "bytes": 5856714
+  },
+  "ssh-rtofs.v20261128T1000Z.r20261128T0000Z.json": {
+   "bytes": 5857176
+  },
+  "ssh-rtofs.v20261128T1100Z.r20261128T0000Z.json": {
+   "bytes": 5856910
+  },
+  "ssh-rtofs.v20261128T1200Z.r20261128T0000Z.json": {
+   "bytes": 5857223
+  },
+  "ssh-rtofs.v20261128T1300Z.r20261128T0000Z.json": {
+   "bytes": 5857211
+  },
+  "ssh-rtofs.v20261128T1400Z.json": {
+   "bytes": 5856490
+  },
+  "ssh-rtofs.v20261128T1500Z.json": {
+   "bytes": 5856741
+  },
+  "ssh-rtofs.v20261128T1600Z.json": {
+   "bytes": 5856917
+  },
+  "ssh-rtofs.v20261128T1700Z.json": {
+   "bytes": 5856939
+  },
+  "ssh-rtofs.v20261128T1800Z.json": {
+   "bytes": 5855942
+  },
+  "ssh-rtofs.v20261128T1900Z.json": {
+   "bytes": 5856077
+  },
+  "ssh-rtofs.v20261128T2000Z.json": {
+   "bytes": 5855471
+  },
+  "ssh-rtofs.v20261128T2100Z.json": {
+   "bytes": 5854869
+  },
+  "ssh-rtofs.v20261128T2200Z.json": {
+   "bytes": 5855102
+  },
+  "ssh-rtofs.v20261128T2300Z.json": {
+   "bytes": 5855571
+  },
+  "ssh-rtofs.v20261129T0000Z.json": {
+   "bytes": 5855341
+  },
+  "ssh-rtofs.v20261129T0100Z.json": {
+   "bytes": 5855318
+  },
+  "ssh-rtofs.v20261129T0200Z.json": {
+   "bytes": 5855185
+  },
+  "ssh-rtofs.v20261129T0300Z.json": {
+   "bytes": 5853611
+  },
+  "ssh-rtofs.v20261129T0400Z.json": {
+   "bytes": 5854756
+  },
+  "ssh-rtofs.v20261129T0500Z.json": {
+   "bytes": 5854514
+  },
+  "ssh-rtofs.v20261129T0600Z.json": {
+   "bytes": 5853951
+  },
+  "ssh-rtofs.v20261129T0700Z.json": {
+   "bytes": 5854673
+  },
+  "ssh-rtofs.v20261129T0800Z.json": {
+   "bytes": 5854421
+  },
+  "ssh-rtofs.v20261129T0900Z.json": {
+   "bytes": 5854801
+  },
+  "ssh-rtofs.v20261129T1000Z.json": {
+   "bytes": 5854862
+  },
+  "ssh-rtofs.v20261129T1100Z.json": {
+   "bytes": 5853903
+  },
+  "ssh-rtofs.v20261129T1200Z.json": {
+   "bytes": 5854984
+  },
+  "ssh-rtofs.v20261129T1300Z.json": {
+   "bytes": 5855433
+  },
+  "ssh-rtofs.v20261129T1400Z.json": {
+   "bytes": 5855442
+  },
+  "ssh-rtofs.v20261129T1500Z.json": {
+   "bytes": 5855636
+  },
+  "ssh-rtofs.v20261129T1600Z.json": {
+   "bytes": 5853458
+  },
+  "ssh-rtofs.v20261129T1700Z.json": {
+   "bytes": 5854558
+  },
+  "ssh-rtofs.v20261129T1800Z.json": {
+   "bytes": 5855651
+  },
+  "ssh-rtofs.v20261129T1900Z.json": {
+   "bytes": 5855342
+  },
+  "ssh-rtofs.v20261129T2000Z.json": {
+   "bytes": 5855684
+  },
+  "ssh-rtofs.v20261129T2100Z.json": {
+   "bytes": 5855435
+  },
+  "ssh-rtofs.v20261129T2200Z.json": {
+   "bytes": 5855808
+  },
+  "ssh-rtofs.v20261129T2300Z.json": {
+   "bytes": 5855134
+  },
+  "ssh-rtofs.v20261130T0000Z.json": {
+   "bytes": 5854462
+  },
+  "ssh-rtofs.v20261130T0100Z.json": {
+   "bytes": 5854624
+  },
+  "ssh-rtofs.v20261130T0200Z.json": {
+   "bytes": 5855159
+  },
+  "ssh-rtofs.v20261130T0300Z.json": {
+   "bytes": 5854401
+  },
+  "ssh-rtofs.v20261130T0400Z.json": {
+   "bytes": 5854586
+  },
+  "ssh-rtofs.v20261130T0500Z.json": {
+   "bytes": 5854746
+  },
+  "ssh-rtofs.v20261130T0600Z.json": {
+   "bytes": 5854547
+  },
+  "ssh-rtofs.v20261130T0700Z.json": {
+   "bytes": 5854830
+  },
+  "ssh-rtofs.v20261130T0800Z.json": {
+   "bytes": 5855064
+  },
+  "ssh-rtofs.v20261130T0900Z.json": {
+   "bytes": 5855469
+  },
+  "ssh-rtofs.v20261130T1000Z.json": {
+   "bytes": 5855144
+  },
+  "ssh-rtofs.v20261130T1100Z.json": {
+   "bytes": 5855202
+  },
+  "ssh-rtofs.v20261130T1200Z.json": {
+   "bytes": 5854453
+  },
+  "ssh-rtofs.v20261130T1300Z.json": {
+   "bytes": 5854406
+  },
+  "ssh-rtofs.v20261130T1400Z.json": {
+   "bytes": 5854230
+  }
+ }
+}
